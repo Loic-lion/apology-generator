@@ -10,5 +10,4 @@ __Le repo comprend:__
 * Un dossier assets qui contient:
    * les fichiers scss
    * une image 
-## Aperçu
-lien github pages : https://loic-lion.github.io/apology-generator/
+
