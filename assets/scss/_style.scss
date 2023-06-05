@@ -1,0 +1,51 @@
+body {
+  font-family: "Comfortaa", cursive;
+  background-image: linear-gradient(
+    to top,
+    #69cfec,
+    #75d3ee,
+    #80d7f0,
+    #8adbf2,
+    #94dff4
+  );
+  height: 100vh;
+  header {
+    background-image: linear-gradient(
+      to top,
+      #42b7d8,
+      #4dbddd,
+      #58c4e3,
+      #61cae8,
+      #6bd1ee
+    );
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.699);
+    form {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    h1 {
+      font-size: 30px;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    section {
+      width: 330px;
+      background-color: rgba(255, 255, 255, 0.445);
+      border-radius: 5px;
+      border: solid rgba(255, 255, 255, 0.411);
+      margin-top: 20px;
+      padding: 10px;
+      box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.568);
+    }
+  }
+}
