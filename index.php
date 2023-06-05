@@ -16,36 +16,40 @@
 <body>
     <header>
         <h1>Générateur d'excuses</h1>
-        <form method="post" action="?">
 
-            <input type="text" class="input_text" id="child_name" name="child_name" required placeholder="Nom de l'enfant..."><br>
-
-
-            <input type="radio" id="girl" name="gender" value="fille" required>
-            <label for="girl">Fille</label>
-            <input type="radio" id="boy" name="gender" value="garçon" required>
-            <label for="boy">Garçon</label><br>
-
-
-            <input type="text" class="input_text" id="teacher_name" name="teacher_name" required placeholder="Nom de l'enseignant..."><br>
-
-            <label for="reason">Raison de l'absence:</label><br>
-            <div>
-                <input type="radio" id="illness" name="reason" value="illness" required>
-                <label for="illness">Maladie</label><br>
-                <input type="radio" id="pet_death" name="reason" value="pet_death" required>
-                <label for="pet_death">Décès d'un membre de la famille</label><br>
-                <input type="radio" id="extracurricular" name="reason" value="extracurricular" required>
-                <label for="extracurricular">Activité parascolaire importante</label><br>
-                <input type="radio" id="other" name="reason" value="other" required>
-                <label for="other">Devoirs non faits</label><br>
-            </div>
-
-            <button class="button_generer" type="submit"> Générer <img src="./assets/img/verifier.png" alt="logo validation"> </button>
-        </form>
     </header>
 
     <main>
+        <section class="container_form">
+            <form method="post" action="?">
+
+                <input type="text" class="input_text" id="child_name" name="child_name" required placeholder="Nom de l'enfant..."><br>
+
+
+                <input type="radio" id="girl" name="gender" value="fille" required>
+                <label for="girl">Fille</label>
+                <input type="radio" id="boy" name="gender" value="garçon" required>
+                <label for="boy">Garçon</label><br>
+
+
+                <input type="text" class="input_text" id="teacher_name" name="teacher_name" required placeholder="Nom de l'enseignant..."><br>
+
+
+                <div>
+                    <label for="reason">Raison de l'absence:</label><br>
+                    <input type="radio" id="illness" name="reason" value="illness" required>
+                    <label for="illness">Maladie</label><br>
+                    <input type="radio" id="pet_death" name="reason" value="pet_death" required>
+                    <label for="pet_death">Décès d'un membre de la famille</label><br>
+                    <input type="radio" id="extracurricular" name="reason" value="extracurricular" required>
+                    <label for="extracurricular">Activité parascolaire importante</label><br>
+                    <input type="radio" id="other" name="reason" value="other" required>
+                    <label for="other">Devoirs non faits</label><br>
+                </div>
+
+                <button class="button_generer" type="submit"> Générer <img src="./assets/img/verifier.png" alt="logo validation"> </button>
+            </form>
+        </section>
 
         <?php
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -128,7 +132,7 @@
 
 
 
-            echo "<section> <p>Date: $current_date</p> $message </section>";
+            echo "<section class='container_apology'> <p>Date: $current_date </p> <br>  $message </section>";
         }
 
         ?>
