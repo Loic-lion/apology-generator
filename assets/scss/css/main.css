@@ -157,20 +157,28 @@ input {
 }
 
 .input_text {
+  margin-top: 10px;
   line-height: 1;
   padding: 2px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9176470588);
   border: 2px solid silver;
   border-radius: 10px;
 }
 
 body {
   font-family: "Comfortaa", cursive;
-  background-image: linear-gradient(to top, #69cfec, #75d3ee, #80d7f0, #8adbf2, #94dff4);
+  background-color: #97d8eb;
   height: 100vh;
 }
 body header {
   background-color: #6bd1ee;
+}
+@media screen and (min-width: 376px) {
+  body header {
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 13px 9px 0px rgba(0, 0, 0, 0.363);
+    background-image: linear-gradient(to top, #42b7d8, #4dbddd, #58c4e3, #61cae8, #6bd1ee);
+  }
 }
 body header form {
   padding-left: 30px;
@@ -192,10 +200,22 @@ body header h1 {
   color: white;
   font-weight: 900;
 }
+@media screen and (min-width: 376px) {
+  body header h1 {
+    padding-bottom: 20px;
+  }
+}
 body main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 376px) {
+  body main {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }
 body main .container_form {
   display: flex;
@@ -206,6 +226,13 @@ body main .container_form {
   box-shadow: 0px 13px 9px 0px rgba(0, 0, 0, 0.363);
   background-image: linear-gradient(to top, #42b7d8, #4dbddd, #58c4e3, #61cae8, #6bd1ee);
 }
+@media screen and (min-width: 376px) {
+  body main .container_form {
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 320px;
+  }
+}
 body main .container_apology {
   width: 330px;
   background-color: rgba(255, 255, 255, 0.445);
@@ -214,4 +241,38 @@ body main .container_apology {
   margin-top: 20px;
   padding: 10px;
   box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.568);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 376px) {
+  body main .container_apology {
+    margin-top: 40px;
+    width: 450px;
+  }
+}
+
+.animate {
+  animation: slide 1s ease 0s 1 normal forwards;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  85% {
+    opacity: 0.85;
+    transform: translateX(-10px);
+  }
+  90% {
+    opacity: 0.9;
+    transform: translateX(0);
+  }
+  95% {
+    opacity: 0.95;
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=main.css.map */

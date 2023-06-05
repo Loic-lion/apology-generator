@@ -132,7 +132,7 @@
 
 
 
-            echo "<section class='container_apology'> <p>Date: $current_date </p> <br>  $message </section>";
+            echo "<section class='container_apology animate'> <p>Date: $current_date </p> <br>  $message </section>";
         }
 
         ?>
