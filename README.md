@@ -16,6 +16,7 @@ __Aperçu:__
 Desktop
 
 ![alt tag](https://github.com/Loic-lion/apology-generator/blob/main/img%20readme/screenshot-desktop.png?raw=true)
+
 Smartphone
 
 ![alt tag](https://github.com/Loic-lion/apology-generator/blob/main/img%20readme/screenshot-smartphone.png?raw=true)
